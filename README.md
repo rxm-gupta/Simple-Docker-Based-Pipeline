@@ -1,2 +1,7 @@
 # Simple-Docker-Based-Pipeline
-A minimal Jenkins pipeline that runs a Docker container with node:20-alpine image and executes a single command to verify the Node.js version.
+
+This pipeline configures a simple build process that:
+
+Uses a Docker container with the node:20-alpine image as the execution environment
+Contains a single stage called "Test"
+In the Test stage, it executes one step that runs the shell command node -v, which displays the version of Node.js installed in the container
